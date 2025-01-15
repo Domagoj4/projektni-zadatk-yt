@@ -1,0 +1,212 @@
+.header{
+    height: 55px;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: white;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(200, 200, 200);
+
+}
+
+.lijevi-dio{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo{
+    height: 20px;
+}
+
+.srednji-dio{
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search{
+    flex: 1;
+    width: 0;
+    height: 34px;
+    padding-left: 16px;
+    text-align: left;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgb(180, 180, 180);
+    box-shadow: inset 1px 2px 3px rgb(240, 240, 240);
+}
+
+.search::placeholder{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.search-button{
+    height: 38px;
+    width: 60px;
+    background-color: rgb(245, 245, 245);
+    border: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(180, 180, 180);
+    margin-left: -1px;
+
+}
+
+.search-button,
+.microphone-button,
+.upload-icon-natpis,
+.yt-apps-natpis
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.notifi-natpis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip, 
+.microphone-button .tooltip,
+.upload-icon-natpis .tooltip,
+.yt-apps-natpis .tooltip
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 4px 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.notifi-natpis .tooltip{
+    position: absolute;
+    left: -26px;
+    background-color: gray;
+    color: white;
+    padding: 4px 4px 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, 
+.microphone-button:hover .tooltip,
+.upl-natpis:hover .tooltip,
+.upload-icon-natpis:hover .tooltip,
+.yt-apps-natpis:hover .tooltip
+{
+    opacity: 1;
+}
+.notifi-natpis:hover .tooltip{
+    opacity: 1;
+}
+
+
+.search-icon{
+    width: 25px;
+}
+
+.microphone-button{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.microphone-icon{
+    height: 24px;
+}
+
+.search-button, .microphone-button{
+    position: relative;
+}
+
+
+.desni-dio{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload-icon{
+    height: 24px;
+}
+
+
+.yt-apps{
+    height: 24px;
+}
+
+.obavijest{
+    position: relative;  
+}
+
+.broj-obavijesti{
+    background-color: rgb(208, 0, 0);
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    color: white;
+    width: 12px;
+    padding: 2px 2px 2px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.notification-icon{
+    height: 24px;
+}
+
+.my-channel{
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
